@@ -29,7 +29,15 @@ public class Point
     }
     public abstract class CompareY implements Comparator<Point>
     {
-        for(int i = 0;i<100;
+        public CompareY()
+        {
+            int min = 0;
+            for(int i = 0;i<100;i++)
+            {
+                
+            }
+        }
+        
     }
     public abstract class CompareX implements Comparator<Point>
     {
