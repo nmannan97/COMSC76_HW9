@@ -8,39 +8,23 @@ import java.util.*;
  */
 public class Point  
 {
-    // instance variables - replace the example below with your own
-    private int x;
-    private int y;
+    private double x = 0;
+    private double y = 0;
     private Random rando = new Random();
-    private ArrayList Xcoordinates = new ArrayList();
-    private ArrayList Ycoordinates = new ArrayList();
     /**
      * Constructor for objects of class Point
      */
     public Point()
     {
-        for(int i = 0;i<100;i++)
-        {
-            int n = rando.nextInt(1000);
-            Xcoordinates.add(n);
-            n = rando.nextInt(1000);
-            Ycoordinates.add(n);
-        }
+        x = rando.nextDouble()*100;
+        y = rando.nextDouble()*100;
     }
-    public abstract class CompareY implements Comparator<Point>
+    public double getX()
     {
-        public CompareY()
-        {
-            int min = 0;
-            for(int i = 0;i<100;i++)
-            {
-                
-            }
-        }
-        
+        return x;
     }
-    public abstract class CompareX implements Comparator<Point>
+    public double getY()
     {
-        
+        return y;
     }
 }
