@@ -68,7 +68,10 @@ public class Sorting
         }
         return Return;
     }
-
+    public static void quickSort(int[] list, int first, int last)
+    {
+        
+    }
     public static void main(String[] args)
     {
         Random rando = new Random();
